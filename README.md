@@ -1,12 +1,14 @@
-# ASTECH GLOBAL web sitesi
+# ASTECH GLOBAL
 
-astechglobal.ltd adresinde yayınlanan statik site. Sunucu, veritabanı veya ortam değişkeni gerekmez.
+Güncel, Türkçe ve İngilizce kurumsal web sitesi.
 
-- `public/index.html`: ana sayfa
-- `public/privacy-policy/index.html`: gizlilik politikası
-- `public/style.css`: tasarım
-- `public/app.js`: etkileşimler
-- `public/skyline.webp`: arka plan görseli
-- `vercel.json`: Vercel ayarları (çıktı klasörü `public`)
+- `public/`: Vercel üzerinde yayınlanan statik dosyalar.
+- `source/build.py`: 5 sayfanın TR/EN HTML dosyalarını üretir; `python source/build.py` ile çalıştırılır.
+- `public/corporate.css`: güncel kurumsal stil, krem palet ve logo tipografisi.
+- `public/corporate.js`: menü ve demo bağlantıları.
+- `public/privacy-policy/`: korunan gizlilik politikası.
+- `vercel.json`: mevcut Vercel yapılandırması, çıktı klasörü `public`.
 
-Vercel'deki `astech-global-vercel` projesi bu repoya bağlıdır: `main` dalına yapılan her push siteyi canlıda günceller.
+Sayfalar: Ana Sayfa, Çözümler, Biz Kimiz, İletişim, SSS. Sunucu, veritabanı veya ortam değişkeni gerekmez. Yerel önizleme: `python -m http.server 8000 --directory public`.
+
+Mevcut Vercel projesi `main` dalına bağlıysa commit sonrasında otomatik dağıtım başlar.

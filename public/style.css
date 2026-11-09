@@ -28,3 +28,12 @@ footer{background:#0f1720;color:#e7e5e1;padding-top:64px}.footer-top{align-items
 header .brand .wordmark strong{font-family:'Manrope','DM Sans',Arial,sans-serif;font-size:32px;font-weight:800;letter-spacing:-1.35px;line-height:1.05}
 header .brand .wordmark>span{font-family:'Manrope','DM Sans',Arial,sans-serif;font-size:8px;font-weight:600;letter-spacing:4.5px;line-height:1.2;margin-top:7px;margin-right:-4.5px;opacity:.85}
 @media(max-width:700px){header .brand .wordmark strong{font-size:27px;letter-spacing:-1.15px}header .brand .wordmark>span{font-size:7px;letter-spacing:3.7px;margin-right:-3.7px;margin-top:5px}}
+
+/* Original AG artwork, closely framed for the navigation. */
+header .brand{gap:15px;flex-shrink:0}
+header .brand>.brand-symbol{display:flex;align-items:center;justify-content:center;width:88px;height:65px;border-radius:10px;transition:background .3s;letter-spacing:0}
+header .brand-symbol img{display:block;width:78px;height:56px;object-fit:contain}
+header.is-scrolled .brand-symbol{background:#0f1720}
+@media(max-width:1000px){header nav{gap:15px;font-size:12px}}
+@media(max-width:700px){header .brand{gap:9px}header .brand>.brand-symbol{width:57px;height:49px;border-radius:7px}header .brand-symbol img{width:51px;height:37px}header .brand .wordmark strong{font-size:23px}header .brand .wordmark>span{font-size:6px;letter-spacing:3px;margin-right:-3px}header .button.small{gap:9px;padding:11px 12px}}
+@media(max-width:360px){header .brand{gap:6px}header .brand .wordmark strong{font-size:20px}header .button.small{font-size:10px;gap:5px;padding:10px}}
